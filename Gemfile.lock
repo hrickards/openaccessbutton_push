@@ -1,17 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.6)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.1)
       faraday (>= 0.7.4, < 0.10)
     multipart-post (2.0.0)
+    net-http-persistent (2.9.4)
     parse-ruby-client (0.3.0)
       faraday
       faraday_middleware
     rack (1.6.0.beta)
     rack-protection (1.5.3)
       rack
+    rack-wwwhisper (1.1.8)
+      addressable (~> 2.0)
+      net-http-persistent
+      rack (~> 1.0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -24,4 +30,5 @@ PLATFORMS
 DEPENDENCIES
   parse-ruby-client
   rack
+  rack-wwwhisper (~> 1.0)
   sinatra

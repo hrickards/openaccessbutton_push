@@ -1,0 +1,34 @@
+<form action="/notify" method="post">
+	<div class="form-group">
+		<div class="form-label">Title</div>
+		<input name="title" type="text" />
+	</div>
+
+	<div class="form-group">
+		<div class="form-label">Description</div>
+		<textarea name="description"></textarea>
+	</div>
+
+	<div class="form-group">
+		<div class="form-label">Extended Description</div>
+		<textarea name="bigDescription"></textarea>
+	</div>
+
+	<div class="form-group">
+		<div class="form-label">Type</div>
+		<select name="type" id="type">
+			<option value=""></option>
+			<option value="app">Launch app</option>
+			<option value="url">Open URL</option>
+		</select>
+	</div>
+
+	<div class="form-group" id="url-group">
+		<div class="form-label">URL</div>
+		<input name="url" type="text" />
+	</div>
+
+	<div id="submit-group">
+		<input type="submit"/>
+	</div>
+</form>
